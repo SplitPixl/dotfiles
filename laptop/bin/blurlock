@@ -1,0 +1,3 @@
+#!/bin/sh
+ffmpeg -i ~/.bg -vf "boxblur=25, scale=3840:ih*3840/iw, crop=3840:2160" -y /tmp/lockbg.png
+i3lock -i /tmp/lockbg.png

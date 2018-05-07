@@ -1,0 +1,87 @@
+#if __has_include(".extend.Xresources")
+#include ".extend.Xresources"
+#endif
+
+! ^ The above lines are no comments!
+! Leave them as they are if a file ~/.extend.Xresources is being used on your system.
+! config can be added there or also here below.
+! For comments use "!"
+
+Xft.dpi: 192
+Xft.antialias: true
+Xft.hinting: true
+Xft.rgba: rgb
+Xft.autohint: false
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
+
+XTerm*background: #2b2b2b
+XTerm*foreground: #e7e7e7
+XTerm*pointerColor: #16A085
+XTerm*faceName: Fixed
+XTerm*faceSize: 48
+
+rofi.dpi: 192
+
+urxvt*font: xft:UbuntuMonoDerivativePowerline\ Nerd\ Font:size=12:antialias=true:hinting=false
+urxvt*scrollBar: false
+
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+URxvt.keysym.Shift-Control-C: perl:clipboard:copy
+URxvt.iso14755: False
+URxvt.perl-ext-common: default,clipboard
+URxvt.lsp: 1
+URxvt.letterSpace: 0
+
+URxvt.transparent: true
+URxvt.shading: 50
+
+! special
+*.foreground:   #eceff1
+*.background:   #263238
+*.cursorColor:  #eceff1
+
+! black
+*.color0:       #263238
+*.color8:       #37474f
+
+! red
+*.color1:       #ff9800
+*.color9:       #ffa74d
+
+! green
+*.color2:       #8bc34a
+*.color10:      #9ccc65
+
+! yellow
+*.color3:       #ffc107
+*.color11:      #ffa000
+
+! blue
+*.color4:       #03a9f4
+*.color12:      #81d4fa
+
+! magenta
+*.color5:       #e91e63
+*.color13:      #ad1457
+
+! cyan
+*.color6:       #009688
+*.color14:      #26a69a
+
+! white
+*.color7:       #cfd8dc
+*.color15:      #eceff1
+
+
+#define base_arc_foreground #FFFFFF
+#define base_arc_background_0 #373D48
+#define base_arc_background_1 #303651
+#define base_arc_background_2 #4A5664
+#define base_arc_blue #5294E2
+
+*arc_foreground: 	base_arc_foreground
+*arc_background_0: 	base_arc_background_0
+*arc_background_1: 	base_arc_background_1
+*arc_background_2: 	base_arc_background_2
+*arc_blue: 			base_arc_blue

@@ -1,0 +1,4 @@
+#!/bin/sh
+
+spectacle -b -r -n -o temp.png
+curl -H key=thesecretpassword -F data=@temp.png http://upload.splitpixl.xyz/ | xclip -i -sel c -f

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ -n $1 ]
+then
+	SUBS=\?subreddits\=$1
+fi
+
+echo "Getting wallpaper..."
+curl -# https://fling.radical.cf/api/background$SUBS > ~/.bg
+echo "Setting wallpaper and colors..."
+wal -c -i ~/.bg
